@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+You look out the window.
+<?php
+$d = date("m");
+
+if ($d < "3") {
+  echo "You see frost everywhere, and a dusting of snow.";
+} elseif ($d < "6") {
+  echo "It's a lovely shade of green outside, and sopping wet; good for flowers, bad for dry clothes.";
+} elseif ($d < "9") {
+  echo "It's quite hot. You hope your air conditioner can keep up with your desire not to melt.";
+} elseif ($d < "12") {
+  echo "The leaves are turning the outside world into a fiesta of color as cold and hot weather battle it out for ultimate dominion.";
+}
+
+
+?>
+ Also,
+
+<?php
+$t = date("H");
+
+if ($t < "6") {
+  echo "it's too early for the sun. Why are you up?";
+} elseif ($t < "9") {
+  echo "it's breakfast time.";
+} elseif ($t < "11") {
+  echo "it's been ages since breakfast, and a while until lunch. Time for a little something.";
+} elseif ($t < "13") {
+  echo "it's lunch time.";
+} elseif ($t < "15") {
+  echo "it's that time after lunch when you start to get a little drowsy.";
+} elseif ($t < "18") {
+  echo "it's that time in the afternoon where you start thinking about dinner, and how tired you are, and coffee.";
+} elseif ($t < "20") {
+  echo "it's dinner time, and boy are you hungry.";
+} elseif ($t < "23") {
+  echo "it's beginning to be sort of late in the evening, and it's been a long day.";
+} else {
+  echo "it's quite late now.";
+}
+
+
+
+echo " You need some coffee."
+
+?>
+ 
+</body>
+</html>
